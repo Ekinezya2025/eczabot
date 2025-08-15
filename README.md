@@ -41,18 +41,19 @@ Eğer GPU ortamınız yoksa *requirements.txt* dosyasını indirerek [Google Col
 
 Terminalde şu komutlaı çalıştırın:
 Colab hücresine aşağıdaki kodu ekleyin ve requirements.txt ile app.py dosyalarınızı seçin:  
+```bash
 python
 
 !wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
 !dpkg -i cloudflared-linux-amd64.deb
 
-# İki dosyayı da yükle
+## İki dosyayı da yükle
 uploaded = files.upload()  # requirements.txt ve app.py seç
 
-# Paketleri kur
+## Paketleri kur
 !pip install -r requirements.txt
 
 
 
-# app.py'yi çalıştır
+## app.py'yi çalıştır
 !python app.py
