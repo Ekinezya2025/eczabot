@@ -1,0 +1,7 @@
+unsloth
+torch
+datasets
+trl
+transformers
+sentence-transformers
+rouge-score
